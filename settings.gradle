@@ -1,8 +1,29 @@
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+//        google()
+//        mavenCentral()
+//    }
+//}
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//}
+//rootProject.name = "lab2"
+//include ':app'
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+        jcenter()
     }
 }
 dependencyResolutionManagement {
@@ -12,5 +33,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "test"
+rootProject.name = "lab2"
 include ':app'

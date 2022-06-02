@@ -1,3 +1,32 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_card">5dp</dimen>
+    <dimen name="stroke_Width">5dp</dimen>
+    <dimen name="img_size">100dp</dimen>
+    <dimen name="img_padding">3dp</dimen>
+    <dimen name="scorePadding">10dp</dimen>
+    <dimen name="padding_edit">4dp</dimen>
+    <dimen name="textInputPadding">5dp</dimen>
+    <dimen name="img2width">250dp</dimen>
+    <dimen name="img2height">250dp</dimen>
+    <dimen name="img2marginStart">-80dp</dimen>
+    <dimen name="img2marginTop">-20dp</dimen>
+    <dimen name="img3MarginLeft">20dp</dimen>
+    <dimen name="img3marginTop">-60dp</dimen>
+    <dimen name="img4marginLeft">180dp</dimen>
+    <dimen name="img4marginTop">-50dp</dimen>
+    <dimen name="imgC5size">60dp</dimen>
+    <dimen name="img5marginleft">300dp</dimen>
+    <dimen name="imgMarginTop">350dp</dimen>
+    <dimen name="img6size">40dp</dimen>
+    <dimen name="img6marginLeft">130dp</dimen>
+    <dimen name="img6MarginTOp">420dp</dimen>
+    <dimen name="radioBtnPadding">20dp</dimen>
+    <dimen name="textxDPadding">5dp</dimen>
+    <dimen name="assignPadding">50dp</dimen>
+    <dimen name="btnMarginEnd">16dp</dimen>
+    <dimen name="btnMarginBottom">64dp</dimen>
+    <dimen name="nameSize">20sp</dimen>
 </resources>

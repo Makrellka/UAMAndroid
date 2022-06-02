@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/padding_edit"
+        app:cardBackgroundColor="@color/purple_200"
+        app:cardElevation="0dp"
+        app:layout_column="0"
+        app:layout_columnWeight="1"
+        app:layout_row="0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_edit"
+            android:background="@color/purple_200">
+
+            <LinearLayout
+                android:background="@drawable/circle"
+                android:padding="@dimen/margin_card"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:tag="layoutWithCircle"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToOutline="true"
+                    android:scaleType="centerInside"
+                    android:tag="ShapeableImageView"
+                    app:srcCompat="@drawable/tabaluga"
+
+                    android:background="@color/white"
+                    android:padding="@dimen/img_padding"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:strokeColor="@color/purple_700"
+                    app:strokeWidth="@dimen/stroke_Width"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

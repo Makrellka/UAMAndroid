@@ -1,12 +1,23 @@
 <resources>
-    <string name="app_name">test</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="app_name">lab2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Duties</string>
+    <string name="title_notifications">Rewards</string>
+    <string name="addchild">ADDCHILD</string>
+    <string name="imieTomek">Tomek</string>
+    <string name="plusTwo">+2</string>
+    <string name="imieBartek">Bartek</string>
+    <string name="imieAneta">Aneta</string>
+    <string name="rewardsTitle">Child\nRewards</string>
+    <string name="name">Name</string>
+    <string name="repeat">Repeat</string>
+    <string name="add">ADD</string>
+    <string name="assigned_to">Assigned to:</string>
+    <string name="radioBtn1">Duties</string>
+    <string name="radioBtn2">Behavoiur</string>
+    <string name="anetkaName">Anetka</string>
+    <string name="rafalekName">Rafalek</string>
+    <string name="grazynkaname">Grazynka</string>
+    <string name="birthday">birthday</string>
+    <string name="choose_avatar">choose avatar</string>
 </resources>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".ui.home.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/img2width"
+            android:layout_height="@dimen/img2height"
+            android:layout_marginStart="@dimen/img2marginStart"
+            android:layout_marginTop="@dimen/img2marginTop"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/img2height"
+            android:layout_height="@dimen/img2width"
+            android:layout_marginLeft="@dimen/img3MarginLeft"
+            android:layout_marginTop="@dimen/img3marginTop"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/img2width"
+            android:layout_height="@dimen/img2height"
+            android:layout_marginLeft="@dimen/img4marginLeft"
+            android:layout_marginTop="@dimen/img4marginTop"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/imgC5size"
+            android:layout_height="@dimen/imgC5size"
+            android:layout_marginLeft="@dimen/img5marginleft"
+            android:layout_marginTop="@dimen/imgMarginTop"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/img6size"
+            android:layout_height="@dimen/img6size"
+            android:layout_marginLeft="@dimen/img6marginLeft"
+            android:layout_marginTop="@dimen/img6MarginTOp"
+            android:src="@drawable/circle" />
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioBtn1"
+            android:button="@null"
+            android:drawableLeft="@drawable/ic_task_completed"
+            android:drawableTop="@android:drawable/btn_radio"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioBtn2"
+            android:button="@null"
+            android:paddingLeft="@dimen/radioBtnPadding"
+            android:drawableLeft="@drawable/ic_heart_24"
+            android:drawableTop="@android:drawable/btn_radio"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/textInputPadding">
+
+            <EditText
+                android:id="@+id/editTextxD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="@dimen/textxDPadding"
+                android:ems="10"
+                android:hint="@string/name"
+                android:paddingTop="@dimen/textxDPadding" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/textInputPadding">
+
+            <EditText
+                android:id="@+id/editTextxD1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:drawablePadding="@dimen/textxDPadding"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:hint="@string/repeat"
+                android:paddingTop="@dimen/textxDPadding"
+                android:background="#00000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:paddingTop="@dimen/assignPadding"
+            android:paddingBottom="@dimen/textxDPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assigned_to" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@color/white"
+            android:padding="@dimen/img_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@drawable/tabaluga"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="@dimen/stroke_Width" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@color/white"
+            android:padding="@dimen/img_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@drawable/tabaluga"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="@dimen/stroke_Width"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@color/white"
+            android:padding="@dimen/img_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@drawable/tabaluga"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="@dimen/stroke_Width" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:background="@color/white"
+            android:padding="@dimen/img_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:srcCompat="@drawable/tabaluga"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="@dimen/stroke_Width" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:drawableLeft="@drawable/ic_baseline_add_24"
+        android:drawableTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+
+        android:layout_marginEnd="@dimen/btnMarginEnd"
+        android:layout_marginBottom="@dimen/btnMarginBottom"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
